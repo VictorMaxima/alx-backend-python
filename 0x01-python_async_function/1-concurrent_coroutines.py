@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ module that calls async concurrent routines"""
 import asyncio
 mod = __import__('0-basic_async_syntax')

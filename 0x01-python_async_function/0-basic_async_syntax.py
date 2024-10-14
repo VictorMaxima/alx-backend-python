@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ module for an async funtion that waits for a random period of time"""
 import asyncio
 import random

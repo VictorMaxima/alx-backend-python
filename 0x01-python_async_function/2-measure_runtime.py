@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ module that contains a function to measure the runtime of async tasks """
 import asyncio
 import time

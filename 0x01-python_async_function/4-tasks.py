@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ module that calls async concurrent routines"""
 import asyncio
 task_wait_random = __import__("3-tasks").task_wait_random
