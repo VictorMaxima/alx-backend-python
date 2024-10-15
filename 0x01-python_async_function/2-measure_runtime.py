@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-""" module that contains a function to measure the runtime of async tasks """
-import asyncio
-import time
-wait_n = __import__("1-concurrent_coroutines").wait_n
+""" The basics of async """
+
+from asyncio import run
+from time import time
+
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-def measure_time(n: int, max_delay: int):
-    """ measure the time it takes for a function to execute"""
-    s = time.perf_counter()
-    asyncio.run(wait_n(n, max_delay))
-    elapsed = time.perf_counter() - s
-    return elapsed / n
+def measure_time(n: int, max_delay: int) -> float:
+    """ Measure the runtime """
+    start = time()
+
+    run(wait_n(n, max_delay))
+
+    end = time()
+
+    return (end - start) / n
